@@ -4,24 +4,92 @@ Hide all paragraphs by default
 Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
+
+background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+
+background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(107,58,16,1) 33%, rgba(24,24,24,1) 51%);
+
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(106,107,16,1) 33%, rgba(24,24,24,1) 51%);
+
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(61,107,16,1) 33%, rgba(24,24,24,1) 51%);
+
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(16,69,107,1) 33%, rgba(24,24,24,1) 51%);
+
 ********************************************** */
+body {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+p {
+    font-size: 20pt;
+}
+
 #closed-captions p {
     opacity: 0;
     transition: .05s;
     position: absolute;
+
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
+
 
 #closed-captions .on {
     opacity: 1;
 }
 
 #closed-captions .off {
-    transition: .2s;
+    transition: .5s;
     opacity: 0;
 }
 
 .voice1 {
     font-style: italic;
+    color: blue;
+}
+
+
+
+.voice2 {
+    font-style: bold;
+    color: hotpink;
+
+}
+
+
+.voice3 {
+    color: blueviolet;
+
+}
+
+.voice4 {
+    color: brown;
+
+}
+
+/* **********************************************
+Dit is de styling van de video
+********************************************** */
+
+
+
+iframe {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
 
 /* **********************************************
@@ -109,6 +177,528 @@ You probably want to change the styling.
     font-family: "brenner slab";
 }
 
+/* ********************************************* */
+
+.p1 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p1.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p1.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 400;
+}
+
+.p2 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p2.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p2.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 400;
+}
+
+.p2.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .6s;
+    font-weight: 400;
+}
+
+.p3 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p3.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p3.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 400;
+}
+
+.p3.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p3.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 1.2s;
+    font-weight: 800;
+}
+
+.p3.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.4s;
+    font-family: "brenner sans";
+}
+
+.p3.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.6s;
+    font-family: "brenner display";
+}
+
+.p4 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p4.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p4.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 400;
+}
+
+.p4.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p4.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 0.6s;
+    font-weight: 800;
+}
+
+.p4.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.4s;
+    font-family: "brenner sans";
+}
+
+.p4.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.6s;
+    font-family: "brenner display";
+}
+
+.p4.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 1.6s;
+    font-family: "brenner display";
+}
+
+.p5 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p5.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p5.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 400;
+}
+
+.p5.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p5.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 1.6s;
+    font-weight: 800;
+}
+
+.p5.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.7s;
+    font-family: "brenner sans";
+}
+
+.p5.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 2.2s;
+    font-family: "brenner display";
+}
+
+.p5.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 2.3s;
+    font-family: "brenner display";
+}
+
+.p6 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p6.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p6.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .1s;
+    font-weight: 400;
+}
+
+.p6.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .3s;
+    font-weight: 600;
+}
+
+/* ********************************************* */
+
+.p7 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p7.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p7.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .2s;
+    font-weight: 400;
+}
+
+.p7.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s .8s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.2s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.4s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 2s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(8) {
+    opacity: 1;
+    transition: 0s 2.4s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(9) {
+    opacity: 1;
+    transition: 0s 2.8s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(10) {
+    opacity: 1;
+    transition: 0s 3.2s;
+    font-weight: 600;
+}
+
+.p7.on span:nth-of-type(11) {
+    opacity: 1;
+    transition: 0s 3.4s;
+    font-weight: 600;
+}
+
+.p8 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p8.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p9 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p9.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p10 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p10.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p10.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .2s;
+    font-weight: 400;
+}
+
+.p10.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p10.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s .8s;
+    font-weight: 600;
+}
+
+.p10.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1s;
+    font-weight: 600;
+}
+
+.p10.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.2s;
+    font-weight: 600;
+}
+
+.p10.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 1.3s;
+    font-weight: 600;
+}
+
+.p11 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p11.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p12 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p12.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p13 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p13.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p13.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .2s;
+    font-weight: 400;
+}
+
+.p13.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .3s;
+    font-weight: 600;
+}
+
+.p13.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 600;
+}
+
+.p13.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p13.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s .6s;
+    font-weight: 600;
+}
+
+.p13.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s .7s;
+    font-weight: 600;
+}
+
+.p14 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p14.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p15 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p15.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p16 span {
+    opacity: 0;
+    font-family: brenner;
+}
+
+.p16.on span:first-of-type {
+    opacity: 1;
+    transition: 0s;
+    font-weight: 200;
+}
+
+.p16.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .2s;
+    font-weight: 400;
+}
+
+.p16.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s .3s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s .4s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s .5s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s .6s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s .7s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(8) {
+    opacity: 1;
+    transition: 0s .8s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(9) {
+    opacity: 1;
+    transition: 0s .9s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(10) {
+    opacity: 1;
+    transition: 0s 1s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(11) {
+    opacity: 1;
+    transition: 0s 1.2s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(12) {
+    opacity: 1;
+    transition: 0s 1.3s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(13) {
+    opacity: 1;
+    transition: 0s .7s;
+    font-weight: 600;
+}
+
+.p16.on span:nth-of-type(14) {
+    opacity: 1;
+    transition: 0s .7s;
+    font-weight: 600;
+}
+
 /* **********************************************
 Sounds.
     You can style the whole body, or you can
@@ -117,15 +707,86 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-    background: pink;
+.sound0 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
 }
 
-iframe {
-    transition: 1s;
+.sound1 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound2 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound3 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound4 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound5 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound6 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound7 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound8 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound9 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound10 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound11 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound12 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound13 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound14 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound15 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound16 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound17 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
+/*
 .sound1 iframe {
     transform: rotate(1turn);
 }
+*/

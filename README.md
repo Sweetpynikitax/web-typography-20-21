@@ -47,6 +47,34 @@ Nadat ik het fragment heb bekeken zonder geluid en alleen de tekst heb gelezen, 
 Door de vele variaties van de lettertype, denk ik dat ik meer onderscheid en duidelijkheid kan creeëren.
 
 
+Inzichten na het interview:
+
+- Darice heeft vroeger wel wat kunnen horen en ze kan zich geluid ook goed herineren, dit maakt het voor mij wat makkelijker om geluid te visualiseren, omdat ze erbij wat kan voorstellen. Ze heeft gezegt dat geluid precies voor ons hetzelfde is dus hoe ik geluid zou omschrijven zou zij moeten kunnen begrijpen.
+
+- Haar iritaties zijn vaak dat Closed Captions te snel kunnen zijn en dat het soms moeilijk te volgen is waardoor ze een film vaker moet bekijken om het hele verhaal te snappen. Ik ga proberen om tekst langer te laten staan zodat het makkelijker te lezen is, maar het moet altijd in sink zijn met het beeld. De tekst moet ook niet al te veel overheersen met het beeld want anders zou de tekst te afleidend zijn voor het beeld en is de film voor Darice niet meer te volgen.
+
+- De font voor het lezen kan soms ook een probleem zijn als het te snel gaat, het font moet niet te licht zijn kwa font-weight.
+
+- Darice had aangegeven dat spanning heel erg krachtig zijn door het beeld en dat je bijvoorbeeld bij Thrillers heel veel kan verwachten wat er gaat gebeuren. Darice gaf wel aan dat het beschrijven van sound effect toch alles wat interessanter kan maken en die combinatie zal het heel leuk kunnen maken. Een voorbeeld hiervan van sound kan zijn dat er aangegeven moet worden als er een bepaald liedje wordt afgespeeld. Aandacht verdelen zal altijd voor de persoon zelf wel heel moeilijk kunnen zijn.
+
+- Darice gaf aan dat bij een drukke scene het beeld zelf niet te druk moet zijn, want het kan heel erg afleidend werken. Ik heb bedacht om toch dingen groot maar subtiel te geven.
+
+- Actie films kunnen heel erg druk zijn terwijl films zoals drama's heel erg prettig is om te lezen.
+
+- Kwa typografie erkent Darice dat bold en CAPS LOCK vaak wordt gebruikt als iemand iets hard op zegt of schreeuwt. Er moet ook een goede onderscheid zijn als er iets gezegt wordt, dit kan typografisch als met kleur.
+
+#### Process
+
+Om te beginnen heb ik kleur toegevoegd aan de stemmen om te begrijpen wanneer iemand wat zegt om het voor mijzelf wat begrijpelijker te maken, want dat was enorm lastig.
+
+Ik heb alles gecentreerd in het midden voor elke scherm. De tekst is onder de video te vinden.
+
+Ik heb ervoor gekozen om elk woord een voor een te laten in komen zoals hoe het uitgesproken wordt in de video dit maakt het makkelijker om te lezen.
+
+
+
+
+
 
 
 
