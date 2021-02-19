@@ -71,7 +71,18 @@ Ik heb alles gecentreerd in het midden voor elke scherm. De tekst is onder de vi
 
 Ik heb ervoor gekozen om elk woord een voor een te laten in komen zoals hoe het uitgesproken wordt in de video dit maakt het makkelijker om te lezen.
 
+Na feedback heb ik toch besloten om een soort opacity achter de woorden te zetten, zodat het makkelijker te volgen is, omdat sommige woorden best snel wegvallen uit het beeld.
 
+Na het intervieuw met Darice kwam te voren dat ze meer kleur onderscheid wilt dus heb ik ervoor gekozen om een background in kleur bij de tekst toe te voegen.
+
+In mijn prototype probeer ik veel van de exclusive designs toe te voegen.
+
+
+Zoals de noncence door een beetje alles heftig te maken bij geluid en wat emoji's boven de video.
+
+Consistent doormiddel van de layout hetzelfde te laten maar dan verschil in kleuren.
+
+Priorityse identity door de identiteit van mij darice en Vasilis te gebruiken.
 
 
 

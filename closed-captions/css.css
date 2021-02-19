@@ -22,27 +22,117 @@ background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(16,69,107,1) 33%, rgba(24,24,24,1) 51%);
 
 ********************************************** */
+
+/* Prefault styling */
+
 body {
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-
-
-
 }
 
 p {
-    font-size: 21pt;
+    font-size: 16pt;
 }
+
+/* Boven de video styling */
+
+#soundtekst1 {
+    color: white;
+    font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 200;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    opacity: 0;
+
+}
+
+#soundtekst1 p.tekst1 {
+    color: white;
+    font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 200;
+    font-size: 12pt;
+    border: 1px solid black;
+    padding: 5px 15px;
+    max-width: 300px;
+    text-align: center;
+    text-shadow: 4px 3px 4px grey;
+    background-color: rgb(0, 1, 0, 0.3);
+    border-radius: 5px;
+}
+
+#soundtekst2 {
+    color: white;
+    font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 200;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    opacity: 0;
+}
+
+#soundtekst2 p.tekst2 {
+    color: white;
+    font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 200;
+    font-size: 12pt;
+    border: 1px solid black;
+    padding: 5px 15px;
+    max-width: 300px;
+    text-align: center;
+    text-shadow: 4px 3px 4px grey;
+    background-color: rgb(0, 1, 0, 0.3);
+    border-radius: 5px;
+}
+
+#soundicon {
+    position: absolute;
+    top: 7%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+}
+
+#soundicon1 {
+    position: absolute;
+    top: 14%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+}
+
+#soundicon2 {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+}
+
+/* onder video styling */
 
 #closed-captions p {
     opacity: 0;
     transition: .05s;
     position: absolute;
-
-    top: 83%;
+    min-width: 560px;
+    padding: 8px;
+    text-align: center;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
 
+}
 
 #closed-captions .on {
     opacity: 1;
@@ -54,11 +144,13 @@ p {
 }
 
 
-
 .voice1 {
     font-family: "Brenner mono";
     color: white;
     text-shadow: 4px 3px 4px blue;
+    border: solid rgba(0, 118, 170, 1);
+    background-color: rgba(0, 118, 170, 0.3);
+    border-radius: 5px;
 }
 
 
@@ -68,6 +160,9 @@ p {
     color: white;
     text-shadow: 4px 3px 4px hotpink;
     font-weight: 400;
+    border: 1px solid rgba(255, 91, 202, 0.5);
+    background-color: rgba(255, 91, 202, 0.3);
+    border-radius: 5px;
 }
 
 
@@ -76,6 +171,9 @@ p {
     font-weight: 800;
     color: white;
     text-shadow: 4px 3px 4px blueviolet;
+    border: 1px solid rgba(153, 25, 255, 0.5);
+    background-color: rgba(153, 25, 255, 0.3);
+    border-radius: 5px;
 }
 
 .voice4 {
@@ -83,38 +181,13 @@ p {
     font-style: normal;
     color: white;
     text-shadow: 4px 3px 4px brown;
+    border: 1px solid rgba(255, 68, 17, 0.5);
+    background-color: rgba(255, 68, 17, 0.3);
+    border-radius: 5px;
 
 }
 
-/* **********************************************
-The first paragraph, with extended timing for
-    all siblings. Basically what it does is that
-    it shows the text after a delay, which
-    corresponds with the time that the word is
-    spoken.
-You probably want to change the styling.
-********************************************** */
-
-
-
-/* **********************************************
-Sounds.
-    You can style the whole body, or you can
-    style anything within the body the moment
-    a sound starts.
-*********************************************  */
-
-/* The moment the class .sound1 is added to the body, the background is yellow */
-
-/**/
-
-/*
-iframe {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-*/
+/* video position */
 
 #video-placeholder {
     position: absolute;
@@ -130,7 +203,390 @@ iframe {
     transition: 1s;
 }
 
+/* iconen styling */
+
+#soundicon {
+    transition: 0.8s;
+}
+
+#soundicon1 {
+    transition: 0.8s;
+}
+
+#soundicon2 {
+    transition: 0.8s;
+}
+
+/* sound styling */
+
+.sound0 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound0 #soundicon1 {
+    opacity: 1;
+}
+
+.sound0 #soundtekst1 {
+    opacity: 1;
+}
+
+
+.sound1 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound1 #soundicon1 {
+    opacity: 0;
+}
+
+.sound1 #soundtekst1 {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.sound1 #soundicon {
+    opacity: 1;
+}
+
+
+.sound2 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound2 #soundicon {
+    opacity: 0;
+
+}
+
+.sound3 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound3 #soundicon {
+    opacity: 1;
+}
+
+.sound4 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound4 #soundicon {
+    opacity: 0;
+
+}
+
+.sound5 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound5 #soundicon {
+    opacity: 1;
+
+}
+
+.sound6 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound6 #soundicon {
+    opacity: 1;
+
+}
+
+.sound7 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound7 #soundicon {
+    opacity: 0;
+
+}
+
+.sound8 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound8 #soundicon {
+    opacity: 1;
+
+}
+
+.sound9 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound9 #soundicon {
+    opacity: 1;
+
+}
+
+
+.sound10 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound10 #soundicon {
+    opacity: 0;
+
+}
+
+
+.sound11 {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound11 #soundicon {
+    opacity: 1;
+
+}
+
+.sound12 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound12 #soundicon {
+    opacity: 1;
+
+}
+
+.sound13 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound13 #soundicon {
+    opacity: 0;
+
+}
+
+.sound14 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound14 #soundicon {
+    opacity: 1;
+
+}
+
+.sound15 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound15 #soundicon {
+    opacity: 0;
+    transition: 0s;
+
+}
+
+.sound16 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound16 #soundicon1 {
+    opacity: 1;
+    transition: 0.1s;
+
+}
+
+.sound16 #soundtekst1 {
+    opacity: 1;
+    transition: 0.1s;
+
+}
+
+.sound17 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound17 #soundicon1 {
+    opacity: 0;
+    transition: 0.1s;
+
+}
+
+.sound17 #soundtekst1 {
+    opacity: 0.3;
+    transition: 0.1s;
+
+}
+
+.sound17 #soundicon {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.sound18 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound18 #soundicon1 {
+    opacity: 0;
+    transition: 0.1s;
+
+}
+
+.sound18 #soundtekst1 {
+    opacity: 0.5;
+    transition: 0.1s;
+
+}
+
+.sound18 #soundicon {
+    opacity: 0;
+    transition: 0s;
+
+}
+
+.sound18 #soundicon2 {
+    opacity: 1;
+    transition: 0.1s;
+
+}
+
+.sound18 #soundtekst2 {
+    opacity: 1;
+    transition: 0.1s;
+
+}
+
+.sound18 #soundtekst1 {
+    opacity: 0;
+    transition: 0.1s;
+
+}
+
+.sound19 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+
+.sound19 #soundicon {
+    opacity: 1;
+    transition: 0s;
+
+}
+
+.sound19 #soundicon2 {
+    opacity: 0;
+    transition: 0.1s;
+
+}
+
+.sound19 #soundtekst2 {
+    opacity: 0;
+    transition: 0.1s;
+
+}
+
+.sound19 #soundtekst1 {
+    opacity: 0.3;
+    transition: 0.1s;
+
+}
+
+
+
+.sound20 {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
+}
+
+.sound20 #soundicon {
+    opacity: 0;
+    transition: 0s;
+
+}
+
+.sound20 #soundtekst1 {
+    opacity: 0.3;
+    transition: 0.1s;
+
+}
+
+.sound20 #soundtekst1 {
+    opacity: 0;
+    transition: 0s;
+
+}
+
+
 /* volgende code is van :https://codepen.io/kuchin/pen/bfsky */
+
+
+.sound1 #soundicon {
+
+    -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
 
 .sound1 iframe {
     -webkit-animation-name: Alarm;
@@ -186,13 +642,27 @@ iframe {
 }
 
 .sound3 iframe {
-    -webkit-animation-name: Alarm3;
+    transition: transform 1s;
+    transform: scale(1.1);
+
+}
+
+.sound4 iframe {
+    transition: transform 1s;
+    transform: scale(1);
+
+}
+
+
+
+.sound3 #soundicon {
+    -webkit-animation-name: Alarmq;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin: 50% 50%;
     -webkit-animation-timing-function: linear;
 }
 
-@-webkit-keyframes Alarm3 {
+@-webkit-keyframes Alarmq {
     0% {
         -webkit-transform: translate(2px, 1px) rotate(0deg);
     }
@@ -239,6 +709,18 @@ iframe {
 }
 
 .sound5 iframe {
+    transition: transform 1s;
+    transform: scale(1.1);
+
+}
+
+.sound6 iframe {
+    transition: transform 1s;
+    transform: scale(1);
+
+}
+
+.sound5 iframe {
     -webkit-animation-name: Alarm5;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin: 50% 50%;
@@ -246,104 +728,211 @@ iframe {
 }
 
 @-webkit-keyframes Alarm5 {
-    0% {
-        -webkit-transform: translate(2px, 1px) rotate(0deg);
-    }
+
 
     10% {
         -webkit-transform: translate(-1px, -2px) rotate(-1deg);
     }
 
-    20% {
-        -webkit-transform: translate(-3px, 0px) rotate(1deg);
-    }
 
     30% {
         -webkit-transform: translate(0px, 2px) rotate(0deg);
     }
 
-    40% {
-        -webkit-transform: translate(1px, -1px) rotate(1deg);
-    }
 
     50% {
         -webkit-transform: translate(-1px, 2px) rotate(-1deg);
     }
 
-    60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-    }
+
 
     70% {
         -webkit-transform: translate(2px, 1px) rotate(-1deg);
+
+
+        90% {
+            -webkit-transform: translate(2px, 2px) rotate(0deg);
+        }
+
+
     }
 
-    80% {
-        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    .sound5 #soundicon {
+        -webkit-animation-name: Alarmw;
+        -webkit-animation-duration: 0.8s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-timing-function: linear;
     }
 
-    90% {
-        -webkit-transform: translate(2px, 2px) rotate(0deg);
+    @-webkit-keyframes Alarmw {
+        0% {
+            -webkit-transform: translate(2px, 1px) rotate(0deg);
+        }
+
+        10% {
+            -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            -webkit-transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            -webkit-transform: translate(0px, 2px) rotate(0deg);
+        }
+
+        40% {
+            -webkit-transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            -webkit-transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            -webkit-transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            -webkit-transform: translate(2px, 2px) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translate(1px, -2px) rotate(-1deg);
+        }
     }
 
-    100% {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+
+
+    .sound6 iframe {
+        -webkit-animation-name: Alarm6;
+        -webkit-animation-duration: 0.8s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-timing-function: linear;
     }
+
+    @-webkit-keyframes Alarm6 {
+        0% {
+            -webkit-transform: translate(2px, 1px) rotate(0deg);
+        }
+
+        10% {
+            -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            -webkit-transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            -webkit-transform: translate(0px, 2px) rotate(0deg);
+        }
+
+        40% {
+            -webkit-transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            -webkit-transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            -webkit-transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            -webkit-transform: translate(2px, 2px) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+    .sound6 #soundicon {
+        -webkit-animation-name: Alarme;
+        -webkit-animation-duration: 0.8s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes Alarme {
+        0% {
+            -webkit-transform: translate(2px, 1px) rotate(0deg);
+        }
+
+        10% {
+            -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            -webkit-transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            -webkit-transform: translate(0px, 2px) rotate(0deg);
+        }
+
+        40% {
+            -webkit-transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            -webkit-transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            -webkit-transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            -webkit-transform: translate(2px, 2px) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+
 }
 
+.sound8 iframe {
+    transition: transform 1s;
+    transform: scale(1.1);
 
-.sound6 iframe {
-    -webkit-animation-name: Alarm6;
-    -webkit-animation-duration: 0.8s;
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation-timing-function: linear;
 }
 
-@-webkit-keyframes Alarm6 {
-    0% {
-        -webkit-transform: translate(2px, 1px) rotate(0deg);
-    }
+.sound9 iframe {
+    transition: transform 1s;
+    transform: scale(1);
 
-    10% {
-        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        -webkit-transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        -webkit-transform: translate(0px, 2px) rotate(0deg);
-    }
-
-    40% {
-        -webkit-transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        -webkit-transform: translate(2px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        -webkit-transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        -webkit-transform: translate(2px, 2px) rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-    }
 }
+
 
 .sound8 iframe {
     -webkit-animation-name: Alarm8;
@@ -353,6 +942,47 @@ iframe {
 }
 
 @-webkit-keyframes Alarm8 {
+
+
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+
+
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+
+
+
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+
+
+    70% {
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+
+
+    90% {
+        -webkit-transform: translate(2px, 2px) rotate(0deg);
+    }
+
+
+}
+
+.sound8 #soundicon {
+    -webkit-animation-name: Alarmr;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes Alarmr {
     0% {
         -webkit-transform: translate(2px, 1px) rotate(0deg);
     }
@@ -398,14 +1028,17 @@ iframe {
     }
 }
 
-.sound9 iframe {
-    -webkit-animation-name: Alarm9;
+
+
+
+.sound9 #soundicon {
+    -webkit-animation-name: Alarmt;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin: 50% 50%;
     -webkit-animation-timing-function: linear;
 }
 
-@-webkit-keyframes Alarm9 {
+@-webkit-keyframes Alarmt {
     0% {
         -webkit-transform: translate(2px, 1px) rotate(0deg);
     }
@@ -452,6 +1085,19 @@ iframe {
 }
 
 .sound11 iframe {
+    transition: transform 1s;
+    transform: scale(1.1);
+
+}
+
+.sound12 iframe {
+    transition: transform 1s;
+    transform: scale(1);
+
+}
+
+
+.sound11 iframe {
     -webkit-animation-name: Alarm11;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin: 50% 50%;
@@ -459,59 +1105,47 @@ iframe {
 }
 
 @-webkit-keyframes Alarm11 {
-    0% {
-        -webkit-transform: translate(2px, 1px) rotate(0deg);
-    }
+
 
     10% {
         -webkit-transform: translate(-1px, -2px) rotate(-1deg);
     }
 
-    20% {
-        -webkit-transform: translate(-3px, 0px) rotate(1deg);
-    }
+
 
     30% {
         -webkit-transform: translate(0px, 2px) rotate(0deg);
     }
 
-    40% {
-        -webkit-transform: translate(1px, -1px) rotate(1deg);
-    }
+
 
     50% {
         -webkit-transform: translate(-1px, 2px) rotate(-1deg);
     }
 
-    60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-    }
+
 
     70% {
         -webkit-transform: translate(2px, 1px) rotate(-1deg);
     }
 
-    80% {
-        -webkit-transform: translate(-1px, -1px) rotate(1deg);
-    }
+
 
     90% {
         -webkit-transform: translate(2px, 2px) rotate(0deg);
     }
 
-    100% {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-    }
+
 }
 
-.sound12 iframe {
-    -webkit-animation-name: Alarm12;
+.sound11 #soundicon {
+    -webkit-animation-name: Alarmy;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin: 50% 50%;
     -webkit-animation-timing-function: linear;
 }
 
-@-webkit-keyframes Alarm12 {
+@-webkit-keyframes Alarmy {
     0% {
         -webkit-transform: translate(2px, 1px) rotate(0deg);
     }
@@ -557,26 +1191,28 @@ iframe {
     }
 }
 
+
+
 .sound14 iframe {
     transition: transform 50s;
-    transform: scale(1.3);
+    transform: scale(1.2);
 
 }
 
 .sound15 iframe {
-    transition: transform 1s;
+    transition: transform 0s;
     transform: scale(1.0);
-
-}
-
-.sound16 iframe {
-    transition: transform 50s;
-    transform: scale(1.3);
 
 }
 
 .sound17 iframe {
-    transition: transform 1s;
+    transition: transform 50s;
+    transform: scale(1.2);
+
+}
+
+.sound20 iframe {
+    transition: transform 0s;
     transform: scale(1.0);
 
 }
@@ -584,88 +1220,10 @@ iframe {
 
 
 
-
-.sound0 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound1 {
-    background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound2 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound3 {
-    background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound4 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound5 {
-    background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound6 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound7 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound8 {
-    background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound9 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound10 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound11 {
-    background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 16, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound12 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(107, 58, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound13 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound14 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound15 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound16 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 107, 16, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-.sound17 {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 45, 1) 33%, rgba(24, 24, 24, 1) 51%);
-}
-
-/* woord voor woord */
+/* woord voor woord styling */
 
 .p0 span {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .p0.on span:first-of-type {
@@ -677,41 +1235,41 @@ iframe {
 .p0.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
-    margin-right: -.60em;
+
     font-weight: 800;
 }
 
 .p0.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .5s;
-    margin-right: -.60em;
+
     font-weight: 800;
 }
 
 .p0.on span:nth-of-type(4) {
     opacity: 1;
     transition: 0s .7s;
-    margin-right: -.30em;
+
     font-weight: 800;
 }
 
 .p0.on span:nth-of-type(5) {
     opacity: 1;
     transition: 0s 1.1s;
-    margin-right: -.60em;
+
 }
 
 .p0.on span:nth-of-type(6) {
     opacity: 1;
     transition: 0s 1.4s;
-    margin-right: -.60em;
+
     font-weight: 200;
 }
 
 .p0.on span:nth-of-type(7) {
     opacity: 1;
     transition: 0s 1.7s;
-    margin-right: -.60em;
+
     font-weight: 200;
 }
 
@@ -719,8 +1277,7 @@ iframe {
     opacity: 1;
     transition: 0s 2s;
     font-weight: 200;
-    margin-right: -.60em;
-    font-weight: 200;
+
 }
 
 .p0.on span:nth-of-type(9) {
@@ -740,7 +1297,7 @@ iframe {
 }
 
 .p1 span {
-    opacity: 0;
+    opacity: 0.1;
     font-family: "Brenner sans";
     font-weight: 400;
 }
@@ -759,7 +1316,7 @@ iframe {
 }
 
 .p2 span {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .p2.on span:first-of-type {
@@ -781,7 +1338,7 @@ iframe {
 }
 
 .p3 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -795,14 +1352,14 @@ iframe {
     opacity: 1;
     transition: 0s .4s;
     font-weight: 800;
-    font-size: 24pt
+    font-size: 19pt
 }
 
 .p3.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .5s;
     font-weight: 800;
-    font-size: 24pt
+    font-size: 19pt
 }
 
 .p3.on span:nth-of-type(4) {
@@ -822,7 +1379,7 @@ iframe {
 }
 
 .p4 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -868,7 +1425,7 @@ iframe {
 }
 
 .p5 span {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .p5.on span:first-of-type {
@@ -913,7 +1470,7 @@ iframe {
 }
 
 .p6 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -921,14 +1478,14 @@ iframe {
     opacity: 1;
     transition: 0s;
     font-weight: 800;
-    font-size: 50pt
+    font-size: 25pt
 }
 
 .p6.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .1s;
     font-weight: 400;
-    font-size: 50pt
+    font-size: 25pt
 }
 
 .p6.on span:nth-of-type(3) {
@@ -939,7 +1496,7 @@ iframe {
 
 
 .p7 span {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .p7.on span:first-of-type {
@@ -1007,18 +1564,18 @@ iframe {
 }
 
 .p8 span {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .p8.on span:first-of-type {
     opacity: 1;
     transition: 0s;
     font-style: italic;
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p9 span {
-    opacity: 0;
+    opacity: 0.1;
 }
 
 .p9.on span:first-of-type {
@@ -1026,11 +1583,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p10 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1077,7 +1634,7 @@ iframe {
 }
 
 .p11 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1086,12 +1643,12 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 
 }
 
 .p12 span {
-    opacity: 0;
+    opacity: 0.1;
     font-family: brenner;
 }
 
@@ -1100,12 +1657,12 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 
 }
 
 .p13 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1152,7 +1709,7 @@ iframe {
 }
 
 .p14 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1161,11 +1718,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p15 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1174,11 +1731,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p16 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1267,7 +1824,7 @@ iframe {
 }
 
 .p17 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1276,11 +1833,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p18 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1289,11 +1846,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p19 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1302,11 +1859,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p20 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1315,11 +1872,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p21 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1387,7 +1944,7 @@ iframe {
 }
 
 .p22 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1396,11 +1953,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p23 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1409,11 +1966,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p24 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1476,7 +2033,7 @@ iframe {
 }
 
 .p25 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1485,11 +2042,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p26 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1498,11 +2055,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p27 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1555,7 +2112,7 @@ iframe {
 }
 
 .p28 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1564,11 +2121,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p29 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1577,11 +2134,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p30 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1622,7 +2179,7 @@ iframe {
 }
 
 .p31 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1631,11 +2188,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p32 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1697,7 +2254,7 @@ iframe {
 }
 
 .p33 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1706,11 +2263,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p34 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1719,11 +2276,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p35 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1795,7 +2352,7 @@ iframe {
 }
 
 .p36 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1804,11 +2361,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p37 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1817,58 +2374,72 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p38 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p38.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-size: 22pt;
 }
 
 .p38.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p38.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .9s;
-    font-size: 25pt;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p39 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p39.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p39.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p39.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .9s;
-    font-size: 25pt;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p40 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -1929,81 +2500,104 @@ iframe {
 .p40.on span:nth-of-type(10) {
     opacity: 1;
     transition: 0s 1.8s;
-    font-size: 25pt;
+    font-size: 22pt;
 
 }
 
 .p41 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p41.on span:first-of-type {
     opacity: 1;
     transition: 0s;
-
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 }
 
 .p41.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p41.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .9s;
-    font-size: 25pt;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 }
 
 .p42 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p42.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p42.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p42.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .9s;
-    font-size: 27pt;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 }
 
 .p43 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p43.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p43.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .4s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p43.on span:nth-of-type(3) {
     opacity: 1;
     transition: 0s .9s;
-    font-size: 29pt;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 }
 
 .p44 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2020,7 +2614,7 @@ iframe {
 }
 
 .p46 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2061,7 +2655,7 @@ iframe {
 }
 
 .p47 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2084,7 +2678,7 @@ iframe {
 }
 
 .p48 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2093,11 +2687,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p49 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2106,12 +2700,12 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 
 .p50 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2164,7 +2758,7 @@ iframe {
 }
 
 .p51 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2173,11 +2767,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p52 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2269,12 +2863,12 @@ iframe {
     opacity: 1;
     transition: 0s 3.2s;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
     font-style: italic;
 }
 
 .p53 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2283,12 +2877,12 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 
 .p54 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2297,7 +2891,7 @@ iframe {
     transition: 0s;
     font-weight: 200;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
     font-style: italic;
 }
 
@@ -2367,7 +2961,7 @@ iframe {
 }
 
 .p55 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2376,11 +2970,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p56 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2389,24 +2983,29 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p57 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p57.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p57.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
-    font-weight: 400;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 }
 
 .p57.on span:nth-of-type(3) {
@@ -2414,23 +3013,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p58 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p58.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p58.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2439,11 +3044,11 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p59 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2452,11 +3057,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p60 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2465,11 +3070,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p61 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2525,12 +3130,12 @@ iframe {
     opacity: 1;
     transition: 0s 1.9s;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
     font-style: italic;
 }
 
 .p62 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2539,11 +3144,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p63 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2599,12 +3204,12 @@ iframe {
     opacity: 1;
     transition: 0s 1.9s;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
     font-style: italic;
 }
 
 .p64 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2613,11 +3218,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p65 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2626,7 +3231,7 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p65.on span:nth-of-type(2) {
@@ -2634,11 +3239,11 @@ iframe {
     transition: 0s .2s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p66 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2647,7 +3252,7 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p66.on span:nth-of-type(2) {
@@ -2655,11 +3260,11 @@ iframe {
     transition: 0s .2s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p67 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2668,11 +3273,11 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p68 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2681,23 +3286,29 @@ iframe {
     transition: 0s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p69 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p69.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p69.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2706,23 +3317,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p70 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p70.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p70.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2731,23 +3348,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p71 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p71.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p71.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2756,23 +3379,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p72 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p72.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p72.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2781,23 +3410,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p73 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p73.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p73.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2806,23 +3441,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p74 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p74.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p74.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2831,23 +3472,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p75 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p75.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p75.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2856,23 +3503,29 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p76 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
 .p76.on span:first-of-type {
     opacity: 1;
     transition: 0s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
 .p76.on span:nth-of-type(2) {
     opacity: 1;
     transition: 0s .3s;
+    font-style: italic;
+    font-family: "Brenner Mono";
+    font-size: 22pt;
 
 }
 
@@ -2881,11 +3534,11 @@ iframe {
     transition: 0s .4s;
     font-style: italic;
     font-family: "Brenner Mono";
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 .p77 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2920,7 +3573,7 @@ iframe {
 }
 
 .p78 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
@@ -2955,7 +3608,7 @@ iframe {
 }
 
 .p79 span {
-    opacity: 0;
+    opacity: 0.1;
 
 }
 
